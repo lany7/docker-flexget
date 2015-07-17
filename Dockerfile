@@ -14,4 +14,4 @@ VOLUME ["/root/.flexget"]
 
 ENV LOGLEVEL info
 
-CMD ["/usr/local/bin/flexget", "--loglevel", "${LOGLEVEL}", "daemon", "start"]
+CMD ["/usr/bin/flexget", "--loglevel", "${LOGLEVEL}", "daemon", "start"]
