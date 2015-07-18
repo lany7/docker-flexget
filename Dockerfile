@@ -12,6 +12,4 @@ RUN mkdir -p /root/.flexget \
 
 VOLUME ["/root/.flexget"]
 
-ENV LOGLEVEL info
-
-ENTRYPOINT ["/usr/bin/flexget", "--loglevel", "${LOGLEVEL}", "daemon", "start"]
+ENTRYPOINT ["/usr/bin/flexget", "--loglevel", "info", "daemon", "start"]
