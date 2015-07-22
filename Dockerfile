@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM vizzbuzz/base-alpine:0.9
 
 RUN apk add --update \
     python \
@@ -12,4 +12,4 @@ RUN mkdir -p /root/.flexget \
 
 VOLUME ["/root/.flexget"]
 
-ENTRYPOINT ["/usr/bin/flexget", "--loglevel", "info", "daemon", "start"]
+CMD ["/usr/bin/flexget", "--loglevel", "info", "daemon", "start"]
